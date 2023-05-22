@@ -1,7 +1,5 @@
-"use client";
-
 import Auth from "@/components/auth/Auth";
 
-export default function Authentication() {
+export default function Page() {
     return <Auth />;
 }

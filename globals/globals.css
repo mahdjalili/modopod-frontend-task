@@ -1,4 +1,7 @@
 /*CSS Reset*/
+* {
+	box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,4 +60,8 @@ table {
 	background-color: var(--white);
 	box-shadow: var(--box-shadow);
 	border-radius: var(--border-radius);
+}
+.widget_no_shadow {
+	background-color: var(--white);
+
 }
