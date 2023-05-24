@@ -5,7 +5,6 @@ import styles from "./dashboard.module.css";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 
@@ -18,16 +17,16 @@ export default function Dashboard({ children }) {
             path: "/dashboard",
         },
         {
+            text: "مرچندايز",
+            path: "/dashboard/merchandise",
+        },
+        {
             text: "دیزاین",
             path: "/dashboard/design",
         },
         {
-            text: "داشبورد",
-            path: "/not-dashboard",
-        },
-        {
-            text: "داشبورد",
-            path: "/not-dashboard",
+            text: "محصولات",
+            path: "/dashboard/products",
         },
     ];
 
@@ -39,6 +38,7 @@ export default function Dashboard({ children }) {
                         <img src="https://modopod.ir/wp-content/uploads/2023/01/Asset-8-1@2x.png" alt="#"></img>
                     </div>
                     <div className={styles.avatar}>
+                        <span>مهدی جلیلی</span>
                         <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/2.jpg" />
                     </div>
                 </nav>

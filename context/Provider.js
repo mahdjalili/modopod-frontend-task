@@ -1,8 +1,10 @@
 "use client";
-
+import axios from "axios";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-export default function MUIThemeProvider({ children }) {
+axios.defaults.baseURL = process.env.API;
+
+export default function Provider({ children }) {
     const theme = createTheme({
         direction: "rtl",
         typography: {
